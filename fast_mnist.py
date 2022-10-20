@@ -1,6 +1,8 @@
 from __future__ import print_function
-import argparse
 import time
+start = time.time()
+
+import argparse
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -108,6 +110,6 @@ def main():
     
     return test_acc
 
-start = time.time()
+
 main()
 print(time.time() - start, 's')
